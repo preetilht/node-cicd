@@ -1,7 +1,7 @@
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
 trigger:
-  - master
+  - main
 steps:
   - task: CopyFiles@2
     displayName: 'Copy Files to: $(build.artifactstagingdirectory)/Templates'
